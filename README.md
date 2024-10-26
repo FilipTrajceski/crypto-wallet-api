@@ -20,21 +20,23 @@ User has to confirm the password he/she created.
   "country": "string",
   "phoneNumber": "string"
 }
+```
 Response: 200 - Registered Succesfully!
 401- Bad Request.
-```
+
 ---
-Login Endpoint - [POST] /api/Account/login
+### Login Endpoint - [POST] /api/Account/login
 
 This endpoint provides a JWT Bearer token if the user is registered or has a previously created an account in the DB.
 With the JWT token you can Authorize access to the other endpoints.
 
-Request Body: 
-'
+**Request Body**: 
+```json
 {
   "userName": "string",
   "password": "string"
 }
+```
 Response: 200 - JWT token
 401- Bad Request/Password error
 
