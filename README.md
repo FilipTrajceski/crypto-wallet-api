@@ -22,6 +22,7 @@ User has to confirm the password he/she created.
 }
 Response: 200 - Registered Succesfully!
 401- Bad Request.
+```
 ---
 Login Endpoint - [POST] /api/Account/login
 
