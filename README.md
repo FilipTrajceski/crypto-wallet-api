@@ -40,7 +40,7 @@ With the JWT token you can Authorize access to the other endpoints.
 Response: 200 - JWT token
 401- Bad Request/Password error
 
-###Multi-Currency Support- You can manage up to 50 cryptocurrencies with this API. Users are required to input the value for each cryptocurrency when adding it to their wallet, as no default values are provided.
+Multi-Currency Support- You can manage up to 50 cryptocurrencies with this API. Users are required to input the value for each cryptocurrency when adding it to their wallet, as no default values are provided.
 Transfer option- User can transfer a Currency from his wallet to another users wallet with some conditions.
 
 
