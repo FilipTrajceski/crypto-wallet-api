@@ -4,13 +4,14 @@ A secure and efficient API for managing cryptocurrency wallets, built to support
 The CryptoWallet API allows users to generate a wallet, check balances, buy and sell currencies and transfer crypto currencies from one to another user.
 The API contains a Register and Login Endpoints using the Identity NugetPackage.Every user can have only one wallet,and with one wallet you can add a CryptoCurrency through the CryptoCurrency POST method,or through the Transaction Buy/Sell options.Also you can transfer crypto currencies from your wallet to another users wallet.
 
-Register endpoint- [POST] /api/Account
+### Register endpoint- [POST] /api/Account
 
 This endpoint allows the user to create an account.
 The user has to input a Uniqe username.The password must be 8 characters long with at least one uppercase character,one number and one special character.
 User has to confirm the password he/she created.
 
-Request Body: 
+**Request Body**: 
+```json
 {
   "userName": "string",
   "password": "string",
@@ -28,6 +29,7 @@ This endpoint provides a JWT Bearer token if the user is registered or has a pre
 With the JWT token you can Authorize access to the other endpoints.
 
 Request Body: 
+'
 {
   "userName": "string",
   "password": "string"
